@@ -1,0 +1,27 @@
+import javax.swing.*;
+
+public class Addition {
+	
+	public static void main(String[] args){
+		int number1;
+		int number2;
+		
+		String integer1 = JOptionPane.showInputDialog("Enter First Integer: ");
+		String integer2 = JOptionPane.showInputDialog("Enter Second Intger: ");
+		
+		try{
+			number1 = Integer.parseInt(integer1);
+			number2 = Integer.parseInt(integer2);
+		}
+		catch (Exception exception){
+			System.err.println(exception);
+		}
+		
+		int sum = number1 + number2;
+		JOptionPane.showMessageDialog(null, "The sum is: " + sum, 
+				"Sum of two Integers", JOptionPane.PLAIN_MESSAGE);
+	}
+
+	
+	
+}
